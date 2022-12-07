@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+.display-header {
+ font-size: 25px;
+
+}
+
+.display-title {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  color: #FB2576;
+}
+
+.display {
+  text-align: left;
+  width:  300px;
+}
+
+.song-row__item {
+  width: 25%;
+  text-align: left;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
