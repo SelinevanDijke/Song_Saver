@@ -13,15 +13,25 @@ class SongOverview extends React.Component {
       }
     }
 
-    // addSong = (song) => {
-    //                       // do something to change the state
-    // }
-  
+    addItemToPlaylist = (title, artist, genre, rating) => {
+      this.setState ({
+        songs:[    
+          ...this.state.songs,
+          {id: this.state.songs.length + 1,
+          title: title,
+          artist: artist,
+          genre: genre,
+          rating: rating,
+        }]
+      })
+    }
+
     render() {
       return (
         <div className="overview">
           <SongList 
-          songs={this.state.songs} 
+          songs={this.state.songs}
+          addTitleToList={this.addItemToPlaylist}
           />
         </div>
       );

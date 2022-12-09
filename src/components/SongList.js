@@ -2,9 +2,9 @@ import React from "react";
 import ListItem from "./ListItem";
 import SongForm from "./SongForm";
 
-function SongList({songs}) {
-
+function SongList({songs, addTitleToList}) {
     const songItems = songs.map(song => <ListItem key= {song.id} song={song}/>)
+
     return (
         <div>
             <h1 className="dislay-title">Seline's Playlist</h1>
@@ -18,9 +18,8 @@ function SongList({songs}) {
             </table>
             {songItems} 
             <br />
-            <SongForm />
+            <SongForm onSubmit={ addTitleToList }/>
         </div>
-        
    )
 }
 export default SongList
