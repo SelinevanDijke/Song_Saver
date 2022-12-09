@@ -18,7 +18,6 @@ class SongOverview extends React.Component {
     // }
   
     render() {
-
       return (
         <div className="overview">
           <SongList 

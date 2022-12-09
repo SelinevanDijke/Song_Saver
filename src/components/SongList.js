@@ -1,13 +1,13 @@
 import React from "react";
 import ListItem from "./ListItem";
-// import SongForm from "./SongForm";
+import SongForm from "./SongForm";
 
-function SongList({songs, selectedGenre}) {
+function SongList({songs}) {
 
-    const songItems = songs.map(song => <ListItem key= {song.id} song={song} genre={selectedGenre}/>)
+    const songItems = songs.map(song => <ListItem key= {song.id} song={song}/>)
     return (
         <div>
-            <h1 class="dislay-title">Seline's Playlist</h1>
+            <h1 className="dislay-title">Seline's Playlist</h1>
             <table style={{width: "100%"}}>
                 <tr className="display-header">
                     <th className="display">Title</th>
@@ -16,9 +16,11 @@ function SongList({songs, selectedGenre}) {
                     <th className="display">Rating</th>   
                 </tr> 
             </table>
-            {/* <SongForm onSubmit={ onItemTitleAdd} /> */}
             {songItems} 
+            <br />
+            <SongForm />
         </div>
+        
    )
 }
 export default SongList

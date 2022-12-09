@@ -1,6 +1,7 @@
 import React from "react";
+import SongForm from "./SongForm";
 
-function ListItem ({ song, genre }){
+function ListItem ({ song }){
     return (
 
     <table style={{width: "100%"}}>
