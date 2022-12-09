@@ -22,4 +22,4 @@ function SongList({songs, addTitleToList}) {
         </div>
    )
 }
-export default SongList
+export default SongList;

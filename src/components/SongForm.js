@@ -53,7 +53,7 @@ const SongForm = ({ onSubmit }) => {
                 type="submit"
                 className="formButton"
                 placeholder="Submit"
-                onClick={(e) => addToPlaylist}
+                onClick={addToPlaylist}
             >
                Add to playlist
             </button>
@@ -61,4 +61,4 @@ const SongForm = ({ onSubmit }) => {
     )
 }
 
-export default SongForm
+export default SongForm;
