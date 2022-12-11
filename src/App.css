@@ -7,8 +7,15 @@
   pointer-events: none;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 .display-header {
  font-size: 25px;
+ display: flex;
+ justify-content: center;
+ text-transform: uppercase;
 
 }
 
@@ -16,7 +23,7 @@
   font-size: 30px;
   width: 100%;
   text-align: center;
-  color: #FB2576;
+  
 }
 
 .display {
@@ -24,9 +31,43 @@
   width:  300px;
 }
 
-.song-row__item {
-  width: 25%;
-  text-align: left;
+.form {
+  height: 100px;
+  background-color: #FB2576;
+  display: flex;
+  align-items: center;
+}
+
+.songform {
+  width: 100%;
+}
+
+input[type="text"] {
+ border: 2px solid #3F0071;
+ height: 30px;
+ margin-right: 20px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 15px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.formButton {
+  height: 35px;
+  border: 5px solid #3F0071;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.playlist {
+  background-color: #3F0071;
+  color: white;
+}
+
+.songs-header {
+  display: flex;
+  justify-content: center;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {

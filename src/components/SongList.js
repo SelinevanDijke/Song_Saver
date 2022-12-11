@@ -8,17 +8,21 @@ function SongList({songs, addTitleToList}) {
     return (
         <div>
             <h1 className="dislay-title">Seline's Playlist</h1>
-            <table style={{width: "100%"}}>
-                <tr className="display-header">
-                    <th className="display">Title</th>
-                    <th className="display">Artist</th>  
-                    <th className="display">Genre</th> 
-                    <th className="display">Rating</th>   
-                </tr> 
-            </table>
-            {songItems} 
+            <div className="form">
+                <SongForm onSubmit={ addTitleToList }/>
+            </div>
+            <div className="playlist">
+                <table style={{width: "100%"}}>
+                    <tr className="display-header">
+                        <th className="display">Title</th>
+                        <th className="display">Artist</th>  
+                        <th className="display">Genre</th> 
+                        <th className="display">Rating</th>
+                    </tr> 
+                </table>
             <br />
-            <SongForm onSubmit={ addTitleToList }/>
+                {songItems}
+            </div>
         </div>
    )
 }
