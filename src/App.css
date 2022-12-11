@@ -7,8 +7,21 @@
   pointer-events: none;
 }
 
-h1 {
+h1, h2 {
   text-transform: uppercase;
+  color: #594545;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #9E7676;
+}
+
+a:hover {
+  color: #594545;
 }
 
 .display-header {
@@ -16,7 +29,7 @@ h1 {
  display: flex;
  justify-content: center;
  text-transform: uppercase;
-
+  color: #423434;
 }
 
 .display-title {
@@ -33,7 +46,7 @@ h1 {
 
 .form {
   height: 100px;
-  background-color: #FB2576;
+  background-color: #815B5B;
   display: flex;
   align-items: center;
 }
@@ -43,7 +56,8 @@ h1 {
 }
 
 input[type="text"] {
- border: 2px solid #3F0071;
+ border: 2px solid #815B5B;
+ border-radius: 10px;
  height: 30px;
  margin-right: 20px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,16 +66,18 @@ input[type="text"] {
  text-align: center;
 }
 
-.formButton {
+.formButton, select {
   height: 35px;
-  border: 5px solid #3F0071;
+  width: 200px;
+  border: 3px solid #9E7676;
+  border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
 }
 
 .playlist {
-  background-color: #3F0071;
-  color: white;
+  background-color: #9E7676;
+  color: #FFF8EA;
 }
 
 .songs-header {
@@ -84,11 +100,26 @@ input[type="text"] {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFF8EA;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  
+}
+
+.navBar li {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {

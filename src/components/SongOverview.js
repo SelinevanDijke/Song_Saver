@@ -29,7 +29,6 @@ export class SongOverview extends React.Component {
         ]
       })
     }
-
         
   sortSongs = (e) => {
     const selectedValue = e.target.value
@@ -74,4 +73,4 @@ export class SongOverview extends React.Component {
     }
   }
   
-  export default SongOverview;
+export default SongOverview;
